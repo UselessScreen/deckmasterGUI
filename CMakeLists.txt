@@ -13,7 +13,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(deckmasterGUI main.cpp)
+add_executable(deckmasterGUI src/main.cpp)
 target_link_libraries(deckmasterGUI
         Qt::Core
         Qt::Gui
