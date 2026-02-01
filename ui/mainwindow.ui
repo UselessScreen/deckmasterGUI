@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1179</width>
+    <height>791</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -21,24 +21,24 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
-    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="SquareButton" name="pushButton_2">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>1</horstretch>
-        <verstretch>1</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>Img</string>
-      </property>
-     </widget>
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>300</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="AspectRatioWidget" name="aspectRatioWidget" native="true"/>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -52,7 +52,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1179</width>
      <height>30</height>
     </rect>
    </property>
@@ -137,9 +137,10 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>SquareButton</class>
-   <extends>QPushButton</extends>
-   <header>squarebutton.h</header>
+   <class>AspectRatioWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">aspectratiowidget.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

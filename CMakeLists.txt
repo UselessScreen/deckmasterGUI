@@ -20,6 +20,9 @@ add_executable(deckmasterGUI
         src/ui/squarebutton.h
         src/ui/squarebutton.cpp
         ui/mainwindow.ui
+        src/ui/aspectratiowidget.cpp
+        src/ui/aspectratiowidget.h
+        src/delete_me_after_settings_aspect_ratio.h
 )
 
 target_include_directories(deckmasterGUI PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/ui)
